@@ -1,8 +1,6 @@
 # Análisis de pagos Fintech
 
 
-
-
 ## Qué hay en esta carpeta
 
 ```
@@ -19,13 +17,20 @@ proyecto_resuelto/
 ## En qué orden leerlo
 
 
-1. **Abre `mini_proyecto_m03/README.md`.** Es lo que pedía el proyecto, escrito con la misma estructura.
-2. **Abre los `.py`** en este orden: `limpieza.py` → `analisis.py` → `visualizacion.py` → `main.py`. Debajo de cada pregunta, en `analisis.py`, está la respuesta con su cifra.
+
+. **Abre los `.py`** en este orden: `limpieza.py` → `analisis.py` → `visualizacion.py` → `main.py`. Debajo de cada pregunta, en `analisis.py`, está la respuesta con su cifra.
 
 ## Cómo correrlo (opcional)
 
 
-1. Descomprime `dataset_proyecto_final.zip` y copia `pagos_fintech.csv`, `productos.csv` y `regiones.csv` en `mini_proyecto_m03/data/`.
+ 
+1. Clona este repositorio en tu computadora y entra a la carpeta del proyecto:
+   ```bash
+   git clone https://github.com
+   cd An-lisis-de-pago-Fintech.
+   ```
+   (Los archivos de datos necesarios ya se encuentran incluidos dentro de la carpeta `data/`)
+
 2. Instala lo necesario: `pip install pandas matplotlib seaborn jupyter`.
 3. Entra en `mini_proyecto_m03/` y corre `python main.py`. Imprime cada resultado y vuelve a generar los gráficos.
 
@@ -43,15 +48,16 @@ proyecto_resuelto/
 ## Estructura del proyecto
 
 ```
-mini_proyecto_m03/
-├── limpieza.py        # cargar, diagnosticar, limpiar, reporte
-├── analisis.py        # transformar (merge con productos y regiones) y análisis
-├── visualizacion.py   # generar_graficos
-├── main.py            # ejecuta todo el flujo
-├── graficos/          # imágenes generadas (.png)
-├── pagos_fintech.csv
-├── productos.csv
-└── regiones.csv
+Análisis-de-pago-Fintech./
+├── data/                    # datasets originales (pagos_fintech.csv, productos.csv, regiones.csv)
+├── graficos/                # imágenes generadas (.png)
+├── limpieza.py              # cargar, diagnosticar, limpiar, reporte
+├── analisis.py              # transformar (merge con productos y regiones) y análisis
+├── visualizacion.py         # generar gráficos
+├── main.py                  # ejecuta todo el flujo
+├── diccionario_datos.md     # descripción de variables y estructura de tablas
+├── BI pagos_Fintech.JPG     # vista previa del dashboard en Power BI
+└── README.md                # documentación general del proyecto
 ```
 
 ## Flujo de trabajo
